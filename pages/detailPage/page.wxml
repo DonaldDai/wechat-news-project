@@ -1,0 +1,24 @@
+<!--pages/detailPage/page.wxml-->
+<view class="container">
+<view class="title">{{result.title}}</view>
+
+<p><span>{{result.source || "有关部门"}}</span><span>{{date}}</span></p>
+
+<span id="count">{{result.readCount}}</span>
+</view>
+
+<block wx:for="{{result.content}}" wx:key="unique"> 
+
+  <view wx:if="{{item.type == 'image'}}" class="img container">
+    <image  src="{{item.src}}"></image>
+  </view>
+
+  <view wx:if="{{item.type == 'p'}}" class="paragraph container">
+    <p >{{item.text}}</p>
+  </view>
+
+  <view wx:if="{{item.type == 'strong'}}" class="strong container" >
+    <strong >{{item.text}}</strong>
+  </view>
+
+</block>

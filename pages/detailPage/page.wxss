@@ -1,0 +1,39 @@
+/* pages/detailPage/page.wxss */
+.container {
+  margin: 30rpx;
+  position: relative;
+  text-align: left;
+  text-justify: auto;
+}
+
+.title {
+  font-size: 50rpx;
+  font-weight: bolder;
+}
+
+p span {
+  padding-right: 30rpx;
+  color: #9A9A9A;
+}
+
+#count {
+  position: absolute;
+  right: 0;
+  color: #9A9A9A;
+}
+
+.strong {
+  font-weight: bold;
+  color: crimson;
+  font-size: 40rpx;
+}
+
+.paragraph {
+  font-size: 35rpx;
+}
+
+.img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
